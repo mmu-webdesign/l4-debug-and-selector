@@ -21,6 +21,7 @@ So, to train your eyes to start spotting these:
 2. Keep validating until all the errors are removed.
 3. Once you've validated the page, check that all the links in the HTML work correctly. There should be two links within the text.
 4. Once you believe you have removed all the errors, add some relevant content to the `<title>` tag and add a `<meta name="description" value="" >` tag. Add some relevant information about the page to the `value` attribute of the description meta tag.
+5. Add any tags you think are missing.
 
 ### Compare and contrast the before and after
 
