@@ -31,6 +31,25 @@ You should then see the changes you have made as you fixed the initial version o
 
 ## Using classes in CSS
 
+### Organising our stylesheet
+
+Have a look at `complex.html` and `complex.css`. This code creates a complex layout using some code you might not be totally familiar with, but that's fine at the moment. The biggest problem with this code is that it's a mess: there is code styling the footer before the code styling the header! This makes the code difficult to read and understand.
+
+Could you:
+
+1. Reorganise the stylesheet to make it more readable. This may include adding comments to show when we move from one part of the page to another, e.g. from the header to the main page content.
+2. We have had some feedback from the client that needs doing. See below.
+
+* The 'test nav link' links in the header should be white text without underlines. You can use `text-decoration:none` in your CSS to do this.
+* The links in the text in the main content should be blue.
+* The social media links in the footer should be red.
+
+Add the relevant code to the stylesheet to create these styles. Use a combination of a class and element selector (e.g. `.page-footer ul`), related to the correct part of the page, to do this.
+
+You may also want to use the `:hover` pseudo class to add hover styles for the links in the text and in the footer.
+
+### Removing inline styles
+
 We are going to start with some badly written code and gradually improve it: our aim will be to make it as easy to read, easy to modify, and easy to reuse, as possible.
 
 1. Open the file `bad.html` from the folder you have downloaded in your editor.

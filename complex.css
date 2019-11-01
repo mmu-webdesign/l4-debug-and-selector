@@ -1,0 +1,118 @@
+@import url('https://rsms.me/inter/inter.css');
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.page-footer {
+    margin-top: 5rem;
+    background-color: #333;
+    padding: 2rem 0 8rem 0;
+}
+
+.page-header {
+    background: red;
+    background-image: linear-gradient(red, darkred);
+    padding-top: 2rem;
+}
+
+.page-header h1:before {
+    content: '';
+    display: block;
+    background: darkred;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 0.5rem auto;
+}
+
+.page-footer li+li:before {
+    content: '·';
+    display: inline-block;
+    padding: 0 0.5rem;
+    color: white;
+}
+
+.page-content {
+    max-width: 600px;
+    margin: 5rem auto;
+    line-height: 1.35;
+}
+
+.page-header h1 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    padding: 1rem 0;
+    font-weight: 900;
+    text-align: center;
+}
+
+.page-content h2,
+.page-content h3,
+.page-content p {
+    margin: 0;
+    padding: 0;
+}
+
+.page-content p+p {
+    text-indent: 1rem;
+}
+
+.page-content h2,
+.page-content h3 {
+    margin-top: 2rem;
+    color: red;
+    margin-bottom: 0.25rem;
+}
+
+.page-content h2 {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.page-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.page-header ul {
+    list-style-type: none;
+    text-transform: uppercase;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.page-header ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.page-header ul li a {
+    display: block;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 0;
+    font-weight: 700;
+    transition: background 0.2s ease;
+}
+
+.page-header ul li a:hover {
+    background: darkred;
+}
