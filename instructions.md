@@ -15,23 +15,26 @@ These are the kind of errors you will find:
 * Missing tags
 * Content without tags, or content incorrectly placed in relation to tags.
 
-Use the HTML validator at https://validator.w3.org/ to validate the current state of `fixed.html`, and use the errors that are returned as the starting point to continue removing all the errors from this page.
+So, to train your eyes to start spotting these:
 
-Keep validating until all the errors are removed.
+1. Use the HTML validator at https://validator.w3.org/ to validate the current state of `fixed.html`, and use the errors that are returned as the starting point to continue removing all the errors from this page.
+2. Keep validating until all the errors are removed.
+3. Once you've validated the page, check that all the links in the HTML work correctly. There should be two links within the text.
+4. Once you believe you have removed all the errors, add some relevant content to the `<title>` tag and add a `<meta name="description" value="" >` tag. Add some relevant information about the page to the `value` attribute of the description meta tag.
 
-Once you've validated the page, check that all the links in the HTML work correctly. There should be two links within the text.
+### Compare and contrast the before and after
 
-Once you believe you have removed all the errors, add some relevant content to the `<title>` tag and add a `<meta name="description" value="" >` tag. Add some relevant information about the page to the `value` attribute of the description meta tag.
+Finally, compare the before and after versions - go to http://www.mergely.com/editor and click **file -> import...**. For 'left file' choose `broken.html`, for 'right file' choose `fixed.html`, then click **import**. 
 
-Finally, compare the before and after versions - go to http://www.mergely.com/editor and click **file -> import...**. For 'left file' choose `broken.html`, for 'right file' choose `fixed.html`, then click **import**. You should then see the changes you have made as you fixed the initial version of the file you downloaded.
+You should then see the changes you have made as you fixed the initial version of the file you downloaded.
 
 ## Using classes in CSS
 
-Open the file `bad.html` from the folder you have downloaded.
+We are going to start with some badly written code and gradually improve it: our aim will be to make it as easy to read, easy to modify, and easy to reuse, as possible.
 
-Save it as `good.html` and link the HTML file to the `boxes.css` file in the same folder using the `<link href="" rel="stylesheet">` tag in the `<head>` of your html document.
-
-In the `good.html` file you will find a series of what are called inline styles. It is possible to style HTML elements using these `style` tags but as you can see it makes the code difficult to read.
+1. Open the file `bad.html` from the folder you have downloaded.
+2. Save it as `good.html` and link the HTML file to the `boxes.css` file in the same folder using the `<link href="" rel="stylesheet">` tag in the `<head>` of your html document.
+3. In the `good.html` file you will find a series of what are called inline styles. It is possible to style HTML elements using these `style` tags but as you can see it makes the code difficult to read and change.
 
 What we would like you to do:
 
@@ -68,4 +71,4 @@ Continue to work with the `boxes.css` file and the `good.html` file.
 
 ### Going even further
 
-Using the transform https://css-tricks.com/almanac/properties/t/transform/ and transition https://css-tricks.com/almanac/properties/t/transition/ properties, can you make the blue box spin 180 degrees when it is hovered over? https://css-tricks.com/almanac/selectors/h/hover/
+Using the transform https://css-tricks.com/almanac/properties/t/transform/ and transition https://css-tricks.com/almanac/properties/t/transition/ properties, can you make the blue box spin 180 degrees when it is hovered (https://css-tricks.com/almanac/selectors/h/hover/) over? 
