@@ -57,6 +57,9 @@ To do this:
 2. Delete the code that you don't need from the other classes you've already created (`.red-box`, `.green-box` and `.blue-box`), leaving behind the code which is specific to those classes (hint: it will definitely include the `background-color`).
 3. Remove the '`box`' from the class names, so you should now have a stylesheet with a `.box` class, a `.green` class, a `.red` class and a `.blue` class.
 4. Edit your HTML so that each of the boxes is styled with the `.box` class and the relevant colour. Do this by changing the `<div class="green-box">` to something like `<div class="green box">`.
+5. Save and reload in your browser.
+
+Our CSS is now more economical, we have avoided having a lot of repeated attributes with the same values in each class.
 
 #### Why does this work?
 
