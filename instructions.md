@@ -59,7 +59,7 @@ To do this:
 4. Edit your HTML so that each of the boxes is styled with the `.box` class and the relevant colour. Do this by changing the `<div class="green-box">` to something like `<div class="green box">`.
 5. Save and reload in your browser.
 
-Our CSS is now more economical, we have avoided having a lot of repeated attributes with the same values in each class.
+Our CSS is now more economical. We have avoided having a lot of repeated attributes with the same values in each class.
 
 #### Why does this work?
 
