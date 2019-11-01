@@ -18,7 +18,7 @@ These are the kind of errors you will find:
 So, to train your eyes to start spotting these:
 
 1. Use the HTML validator at https://validator.w3.org/ to validate the current state of `fixed.html`, and use the errors that are returned as the starting point to continue removing all the errors from this page.
-2. Keep validating until all the errors are removed.
+2. Keep validating until all the errors are removed. Save as you make the changes.
 3. Once you've validated the page, check that all the links in the HTML work correctly. There should be two links within the text.
 4. Once you believe you have removed all the errors, add some relevant content to the `<title>` tag and add a `<meta name="description" content="">` tag. Add some relevant information about the page to the `content` attribute of the description meta tag.
 5. Add any tags you think are missing.
@@ -33,17 +33,19 @@ You should then see the changes you have made as you fixed the initial version o
 
 We are going to start with some badly written code and gradually improve it: our aim will be to make it as easy to read, easy to modify, and easy to reuse, as possible.
 
-1. Open the file `bad.html` from the folder you have downloaded.
+1. Open the file `bad.html` from the folder you have downloaded in your editor.
 2. Save it as `good.html` and link the HTML file to the `boxes.css` file in the same folder using the `<link href="" rel="stylesheet">` tag in the `<head>` of your html document.
+3. View `good.html` in a browser. You should see the red, blue and green boxes.
 
 In the `good.html` file you will find a series of what are called inline styles. It is possible to style HTML elements using these `style` tags but as you can see it makes the code difficult to read and change.
 
 What we would like you to do:
 
-1. Remove the styling code in the inline styles from `good.html` and paste them into the `boxes.css` stylesheet. You should have code that looks like this in the HTML: `<div style="">A red box</div>`. Clean it up by removing the in-line style attribute - `<div>A red box</div>`, etc.
+1. Remove the styling code in the inline styles from `good.html` and paste them into the `boxes.css` stylesheet. You should have code that looks like this in the HTML: `<div style="">A red box</div>`. Clean it up by removing the in-line style attribute - `<div>A red box</div>`, etc. Save.
+2. Reload `good.html` in your browser. The styling for the boxes should be gone.
 2. Rewrite the styling code you've removed from `good.html` into CSS so that you create three classes: `.red-box`, `.green-box` and `.blue-box`.
 3. Link the classes in your `boxes.css` CSS file to the correct boxes in the HTML by giving each div in the HTML the correct class attribute.
-4. Refresh the HTML page to see if you've rewritten the code correctly. If things aren't working, check through your code: do you have the right class names? Are they attached to the HTML `div` tags correctly?
+4. Refresh the HTML page to see if you've rewritten the code correctly. The boxes have returned, now from the external styles in `boxes.css`. If things aren't working, check through your code: do you have the right class names? Are they attached to the HTML `div` tags correctly?
 
 ### Chaining classes
 
