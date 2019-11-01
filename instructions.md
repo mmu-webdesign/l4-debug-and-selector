@@ -35,7 +35,8 @@ We are going to start with some badly written code and gradually improve it: our
 
 1. Open the file `bad.html` from the folder you have downloaded.
 2. Save it as `good.html` and link the HTML file to the `boxes.css` file in the same folder using the `<link href="" rel="stylesheet">` tag in the `<head>` of your html document.
-3. In the `good.html` file you will find a series of what are called inline styles. It is possible to style HTML elements using these `style` tags but as you can see it makes the code difficult to read and change.
+
+In the `good.html` file you will find a series of what are called inline styles. It is possible to style HTML elements using these `style` tags but as you can see it makes the code difficult to read and change.
 
 What we would like you to do:
 
