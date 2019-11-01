@@ -43,9 +43,9 @@ What we would like you to do:
 
 1. Remove the styling code in the inline styles from `good.html` and paste them into the `boxes.css` stylesheet. You should have code that looks like this in the HTML: `<div style="">A red box</div>`. Clean it up by removing the in-line style attribute - `<div>A red box</div>`, etc. Save.
 2. Reload `good.html` in your browser. The styling for the boxes should be gone.
-2. Rewrite the styling code you've removed from `good.html` into CSS so that you create three classes: `.red-box`, `.green-box` and `.blue-box`.
-3. Link the classes in your `boxes.css` CSS file to the correct boxes in the HTML by giving each div in the HTML the correct class attribute.
-4. Refresh the HTML page to see if you've rewritten the code correctly. The boxes have returned, now from the external styles in `boxes.css`. If things aren't working, check through your code: do you have the right class names? Are they attached to the HTML `div` tags correctly?
+3. Rewrite the styling code you've removed from `good.html` into CSS so that you create three classes: `.red-box`, `.green-box` and `.blue-box`.
+4. Link the classes in your `boxes.css` CSS file to the correct boxes in the HTML by giving each div in the HTML the correct class attribute.
+5. Refresh the HTML page to see if you've rewritten the code correctly. The boxes have returned, now from the external styles in `boxes.css`. If things aren't working, check through your code: do you have the right class names? Are they attached to the HTML `div` tags correctly?
 
 ### Chaining classes
 
@@ -59,7 +59,7 @@ To do this:
 4. Edit your HTML so that each of the boxes is styled with the `.box` class and the relevant colour. Do this by changing the `<div class="green-box">` to something like `<div class="green box">`.
 5. Save and reload in your browser.
 
-Our CSS is now more economical. We have avoided having a lot of repeated attributes with the same values in each class. Writing good CSS means being enconomical, making the most of the cascade, inheritance and specificity. It's not easy.
+Our CSS is now more economical. We have avoided having a lot of repeated attributes with the same values in each class. Writing good CSS means being economical, making the most of the cascade, inheritance and specificity. It's not easy.
 
 #### Why does this work?
 
@@ -78,9 +78,9 @@ Continue to work with the `boxes.css` file and the `good.html` file.
 
 #### Another CSS property
 
-1. Using the explanation at https://cssreference.io/property/box-shadow/ add a drop shadow to the green box.
+1. Using the explanation at https://cssreference.io/property/box-shadow/ add a drop shadow to the green box. Be sure to set a colour for your box shadow, as the browser will default to showing a white box shadow on a white background, which isn't very helpful.
 2. Again, use the web developer tools to view and modify the display of the box shadow.
 
-### Going even further
+### Going even further with CSS properties
 
-Using the transition https://css-tricks.com/almanac/properties/t/transition/ property on the initial styling of the box, and the transform https://css-tricks.com/almanac/properties/t/transform/ property on the `:hover` selector (https://css-tricks.com/almanac/selectors/h/hover/), can you make the blue box spin 180 degrees in 1 second when it is hovered over? 
+Using the transition https://css-tricks.com/almanac/properties/t/transition/ property on the initial styling of the `.blue` box (set your transition to work on `all`), and the transform https://css-tricks.com/almanac/properties/t/transform/ property as part of a `.blue:hover` selector (https://css-tricks.com/almanac/selectors/h/hover/), can you make the blue box spin 180 degrees in 1 second when it is hovered over?
