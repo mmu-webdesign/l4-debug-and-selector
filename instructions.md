@@ -71,4 +71,4 @@ Continue to work with the `boxes.css` file and the `good.html` file.
 
 ### Going even further
 
-Using the transform https://css-tricks.com/almanac/properties/t/transform/ and transition https://css-tricks.com/almanac/properties/t/transition/ properties, can you make the blue box spin 180 degrees when it is hovered (https://css-tricks.com/almanac/selectors/h/hover/) over? 
+Using the transform https://css-tricks.com/almanac/properties/t/transform/ and transition https://css-tricks.com/almanac/properties/t/transition/ properties, can you make the blue box spin 180 degrees in 1 second when it is hovered (https://css-tricks.com/almanac/selectors/h/hover/) over? 
