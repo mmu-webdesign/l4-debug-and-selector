@@ -40,7 +40,7 @@ In the `good.html` file you will find a series of what are called inline styles.
 
 What we would like you to do:
 
-1. Remove the styling code in the inline styles from `good.html` and paste them into the `boxes.css` stylesheet. You should have code that looks like this in the HTML: `<div>A red box</div>`, etc.
+1. Remove the styling code in the inline styles from `good.html` and paste them into the `boxes.css` stylesheet. You should have code that looks like this in the HTML: `<div style="">A red box</div>`. Clean it up by removing the in-line style attribute - `<div>A red box</div>`, etc.
 2. Rewrite the styling code you've removed from `good.html` into CSS so that you create three classes: `.red-box`, `.green-box` and `.blue-box`.
 3. Link the classes in your `boxes.css` CSS file to the correct boxes in the HTML by giving each div in the HTML the correct class attribute.
 4. Refresh the HTML page to see if you've rewritten the code correctly. If things aren't working, check through your code: do you have the right class names? Are they attached to the HTML `div` tags correctly?
