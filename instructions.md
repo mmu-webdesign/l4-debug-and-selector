@@ -69,6 +69,11 @@ Continue to work with the `boxes.css` file and the `good.html` file.
 3. Find the rule you have just added and try changing the value of the `border-radius` CSS rule. The browser should update as you make changes. 
 4. Try adding two values separated by a space to your `border-radius` rule - what happens? Why is this?
 
+#### Another CSS property
+
+1. Using the explanation at https://cssreference.io/property/box-shadow/ add a drop shadow to the green box.
+2. Again, use the web developer tools to view and modify the display of the box shadow.
+
 ### Going even further
 
 Using the transition https://css-tricks.com/almanac/properties/t/transition/ property on the initial styling of the box, and the transform https://css-tricks.com/almanac/properties/t/transform/ property on the `:hover` selector (https://css-tricks.com/almanac/selectors/h/hover/), can you make the blue box spin 180 degrees in 1 second when it is hovered over? 
