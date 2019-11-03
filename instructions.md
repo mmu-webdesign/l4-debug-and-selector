@@ -1,6 +1,6 @@
 # Week 6 Worksheet
 
-## Debugging HTML
+## Task 1: Debugging HTML
 
 Let's begin by looking at the kind of errors that can creep into our HTML.
 
@@ -9,6 +9,7 @@ Download the zip file and find `broken.html`. Open it in Visual Studio Code and 
 Inside this file are examples of all of the different types of errors we have seen in the class test over the last few years. You might be able to spot a few immediately.
 
 These are the kind of errors you will find:
+
 * Incorrect attributes
 * Spelling errors in tags
 * Incorrectly nested tags
@@ -25,30 +26,11 @@ So, to train your eyes to start spotting these:
 
 ### Compare and contrast the before and after
 
-Finally, compare the before and after versions - go to http://www.mergely.com/editor and click **file -> import...**. For 'left file' choose `broken.html`, for 'right file' choose `fixed.html`, then click **import**. 
+Finally, compare the before and after versions - go to http://www.mergely.com/editor and click **file -> import...**. For 'left file' choose `broken.html`, for 'right file' choose `fixed.html`, then click **import**.
 
 You should then see the changes you have made as you fixed the initial version of the file you downloaded.
 
-## Using classes in CSS
-
-### Organising our stylesheet
-
-Have a look at `complex.html` and `complex.css`. This code creates a complex layout using some code you might not be totally familiar with, but that's fine at the moment. The biggest problem with this code is that it's a mess: there is code styling the footer before the code styling the header! This makes the code difficult to read and understand.
-
-Could you:
-
-1. Reorganise the stylesheet to make it more readable. This may include adding comments to show when we move from one part of the page to another, e.g. from the header to the main page content.
-2. We have had some feedback from the client that needs doing. See below.
-
-* The 'test nav link' links in the header should be white text without underlines. You can use `text-decoration:none` in your CSS to do this.
-* The links in the text in the main content should be blue.
-* The social media links in the footer should be red.
-
-Add the relevant code to the stylesheet to create these styles. Use a combination of a class and element selector (e.g. `.page-footer ul`), related to the correct part of the page, to do this.
-
-You may also want to use the `:hover` pseudo class to add hover styles for the links in the text and in the footer.
-
-### Removing inline styles
+## Task 2: removing inline styles and creating reusable CSS
 
 We are going to start with some badly written code and gradually improve it: our aim will be to make it as easy to read, easy to modify, and easy to reuse, as possible.
 
@@ -77,6 +59,7 @@ To do this:
 3. Remove the '`box`' from the class names, so you should now have a stylesheet with a `.box` class, a `.green` class, a `.red` class and a `.blue` class.
 4. Edit your HTML so that each of the boxes is styled with the `.box` class and the relevant colour. Do this by changing the `<div class="green-box">` to something like `<div class="green box">`.
 5. Save and reload in your browser.
+6. Right click on a box and choose 'inspect element'. Try editing the width or height rules for the `.box` CSS class - notice that all three boxes change as they are all using the same class to control their layout.
 
 Our CSS is now more economical. We have avoided having a lot of repeated attributes with the same values in each class. Writing good CSS means being economical, making the most of the cascade, inheritance and specificity. It's not easy.
 
@@ -84,18 +67,18 @@ Our CSS is now more economical. We have avoided having a lot of repeated attribu
 
 HTML allows you to add multiple classes to the same element: all you need to do is separate them with a space. You can have many classes attached to the same element, e.g. `<p class="story-content extra-styling fancy-typeface animated-in">` - they just need to be separated by a single space. Any relevant CSS class will then be added to the list of styles applied to that piece of HTML.
 
-## Researching and previewing CSS
+## Task 3: Researching and previewing CSS
 
 Continue to work with the `boxes.css` file and the `good.html` file.
 
 ### Using a new CSS property
 
 1. Using the explanation at https://css-tricks.com/almanac/properties/b/border-radius/ write code to restyle just the red box as a circle.
-2. Open the web developer tools in your browser (Chrome or Firefox is best) by right clicking on the red box and choosing 'inspect element'. 
-3. Find the rule you have just added and try changing the value of the `border-radius` CSS rule. The browser should update as you make changes. 
+2. Open the web developer tools in your browser (Chrome or Firefox is best) by right clicking on the red box and choosing 'inspect element'.
+3. Find the rule you have just added and try changing the value of the `border-radius` CSS rule. The browser should update as you make changes.
 4. Try adding two values separated by a space to your `border-radius` rule - what happens? Why is this?
 
-#### Another CSS property
+### Another CSS property
 
 1. Using the explanation at https://cssreference.io/property/box-shadow/ add a drop shadow to the green box. Be sure to set a colour for your box shadow, as the browser will default to showing a white box shadow on a white background, which isn't very helpful.
 2. Again, use the web developer tools to view and modify the display of the box shadow.
@@ -103,3 +86,24 @@ Continue to work with the `boxes.css` file and the `good.html` file.
 ### Going even further with CSS properties
 
 Using the transition https://css-tricks.com/almanac/properties/t/transition/ property on the initial styling of the `.blue` box (set your transition to work on `all`), and the transform https://css-tricks.com/almanac/properties/t/transform/ property as part of a `.blue:hover` selector (https://css-tricks.com/almanac/selectors/h/hover/), can you make the blue box spin 180 degrees in 1 second when it is hovered over?
+
+## Task 4: Organising CSS
+
+### Organising a stylesheet
+
+Have a look at `complex.html` and `complex.css`. This code creates a complex layout using some code you might not be totally familiar with, but that's fine at the moment. The biggest problem with this code is that it's a mess: there is CSS code styling the footer before the code dealing with the header!
+
+This makes the code difficult to read, follow or relate to the HTML it is styling.
+
+We need you to:
+
+1. Reorganise the stylesheet to make it more readable. This may include adding comments to show when we move from one part of the page to another, e.g. from the header to the main page content.
+2. We have had some feedback from the client that needs doing:
+
+* The 'test nav link' links in the header should have white text without underlines (You can use `text-decoration:none` in your CSS to do this).
+* The links in the text in the main content should be blue.
+* The social media links in the footer should be red.
+
+Add the relevant code to the stylesheet to create these styles. Use a combination of a class and element selector (e.g. `.page-footer ul`), related to the correct part of the page, to do this.
+
+You may also want to use the `:hover` pseudo class to add hover styles for the links in the text and in the footer.
