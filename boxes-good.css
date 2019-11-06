@@ -1,0 +1,42 @@
+    /* add your code for good.html here */
+    /* from the initial HTML:
+
+style="width: 10rem; height: 10rem; background-color: red; color:white; float:left; margin: 1rem; padding: 1rem; font-family: sans-serif;" 
+
+remove the 'style="' and the ending " to make the relevant CSS classes
+
+*/
+    
+    .box {
+        width: 10rem;
+        height: 10rem;
+        color: white;
+        float: left;
+        margin: 1rem;
+        padding: 1rem;
+        font-family: sans-serif;
+    }
+    
+    .red {
+        background-color: red;
+        /* we add border-radius: 50%; to make this div into a circle. We are only doing this for the .red class so it doesn't affect the other divs. You could also use a high pixel number or another unit, but 50% means that we will always get a circle regardless of the size of the div. */
+        border-radius: 50%;
+    }
+    
+    .green {
+        background-color: green;
+        /* add a box shadow: I am using a long-ish form of this CSS code - what it sets is the x offset, the y offset, the blur and then the colour. I'm using rgba (red, green, blue and 'alpha', or transparency) colours so that I can have a slightly transparent shadow, as that's how shadows work in 'real life'. Each value is separated by a space. */
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .blue {
+        background-color: blue;
+        /* this is reasonably complex as we set the transition here for anything we do to the blue box in the future, so we are setting the transition to 'all' properties of the box, making transitions take 1 second, and using an animation 'easing' function to make it appear more lifelike (https://developers.google.com/web/fundamentals/design-and-ux/animations/the-basics-of-easing). */
+        transition: all 1s ease;
+    }
+    
+    .blue:hover {
+        /* when we hover over the blue box, make it rotate 180 degrees. Because we have set the transition time above, we will be able to see the change happen. Without the transition the change would be instant, so we would loose the effect. */
+        transform: rotate(180deg);
+        /* remember to specify the unit for the rotation */
+    }

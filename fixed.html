@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Doctype had a typo -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add the meta tag - don't delete the other ones, as different meta tags do different things. The meta tag should describe the content a user would find on this page -->
+    <meta name="description" content="The history and members of Disaster Area, the loudest band in the universe. Characters in the Hitchhiker's Guide to the Galaxy series of Science Fiction books.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Edit the title to quickly explain what this page is about. This is a little difficult to do for this page as we don't know what larger site it is a part of, but this is a reasonable summary. -->
+    <title>Disaster Area from the Hitchhiker's Guide to the Galaxy</title>
+</head>
+
+<body>
+    <header>
+        <!-- we have an inline tag before a block tag - inline tags should always be inside a block level tag, so instead of  <strong><H1>Disaster Area</strong></h1>, we have -->
+        <h1><strong>Disaster Area</strong></h1>
+        <!-- headr was misspelled -->
+    </header>
+    <main>
+        <!-- we have an em tag that transforms into an <i> tag. I would probably use an <i> tag here as we are just indicating this is the name of the band -->
+        <!-- we also need to wrap any text content in some sort of block level tag, so a header tag, a paragraph tag, a table tag or a list item tag - here a paragraph seems most sensible. -->
+        <p><i>Disaster Area</i> is the name of the band in the series of <i>Hitchhiker's Guide to the Galaxy</i> Science Fiction books written by <a href="https://en.wikipedia.org/wiki/Douglas_Adams">Douglas Adams</a>.</p>
+
+        <!-- the original html had the text 'Douglas Adams' outside the link - links should have an opening <a> tag, then the hyperlink text, then the closing </a> tag, as above. -->
+
+        <p>Within the books they are generally regarded as not only the loudest rock band in the Galaxy, but also as being the loudest noise of any kind at all.</p>
+
+        <!-- this <h2> tag wasn't closed correctly. -->
+        <h2>Current band members</h2>
+        <p>Their members include:</p>
+        <!-- this is an unordered list rather than a paragraph. -->
+        <ul>
+            <li>Hotblack Desiato (lead singer)</li>
+            <li>A drummer</li>
+        </ul>
+        <!-- remove the final </p> tag as <ul> and <p> are both block level elements - it doesn't make sense to wrap a paragraph around a list. -->
+        <!-- main should be all in lower case -->
+    </main>
+    <footer>
+        <!-- we had a src attribute rather than a href attribute, and the closing tag was around the wrong way - <\a> is not correct. -->
+        <a href="https://youtu.be/PQjgMF_20dE?t=129">Watch the original BBC TV show on YouTube</a>
+        <!-- footer was misspelled. -->
+    </footer>
+
+</body>
+
+</html>
